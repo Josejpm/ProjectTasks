@@ -1,0 +1,41 @@
+.btn {
+    margin-top: 2rem;
+    font-family: $headingFont;
+    padding: 1.5rem;
+    font-size: 1.4;
+    font-weight: 400;
+    border-radius: .5rem;
+    border: none;
+    transition: background-color .3s ease;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+  .btn-primary {
+    background-color: $gray2;
+    color: $white;
+    &:hover{
+        background-color: $gray3;
+    }
+  }
+
+  .btn-secondary {
+    background-color: $gray1;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-submit:hover {
+    background-color: $gray2;
+  }
+
+  .btn-blank {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+  }

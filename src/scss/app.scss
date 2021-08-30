@@ -1,0 +1,126 @@
+@import 'variables.scss'; 
+@import 'buttons-styles.scss'; 
+@import 'form-styles.scss'; 
+
+
+/* ===================== Main Styles */
+*, *:before, *:after {
+    box-sizing: inherit;
+  } 
+  html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5%; 
+  }
+  body {
+    min-height: 100%;
+    background-color: $gray1;
+    font-size: 16px; 
+    font-size: 1.6rem;
+    font-family: $textFont;
+  }
+  
+  
+  h1, h2 {
+    font-family: $headingFont;
+    font-weight: 900;
+    margin: 0 0 4rem 0;
+    text-align: center;
+    color: $gray2;
+  }
+  h1 span {
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: $gray2;
+  }
+
+  /* ==============  Error message styles*/
+  .message {
+    font-weight: 900;
+    font-family: $textFont;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 0;
+    
+    &.task{
+      margin-bottom: 1rem;
+      display: block;
+    }
+  }
+  .error {
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+    background-color: rgb(170, 0, 0);
+    color: $white;
+    
+  }
+
+
+  /* ============== Alerts Styles*/
+
+  .alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-family: $headingFont;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+  }
+  @media (min-width:768px) {
+    .alert {
+        width: auto;
+        top: 30px;
+        right: 10px;
+        left: auto;
+    }
+  }
+  
+  .alert-ok {
+    background-color: rgb(109, 211, 109);
+    color: rgb(2, 103, 2);
+  }
+  .alert-error {
+    background-color: rgb(228, 28, 28);
+    color:$white;
+  }
+
+  /* =============  Responsive design */
+
+  @media (min-width: 768px) {
+    .app-container {
+        display: flex;
+        min-height: 100vh;
+    }
+  
+    aside {
+        background-color: $white;
+        flex: 0 0 300px;
+    }
+    .main-section {
+        flex: 1;
+    }
+  
+  }
